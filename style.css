@@ -1,0 +1,134 @@
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: Arial;
+}
+
+html,body{
+    width: 100%;
+    height: 100%;
+}
+#main{
+    height: 100%;
+    width: 100%;
+    display: flex;
+}
+
+#lnav{
+   width: 100%;
+   padding: 20px 30px;
+   display: flex;
+   justify-content: space-between;
+   font-size: 14px;
+   
+
+}
+
+#lnavr{
+    align-items: center;
+    display: flex;
+}
+
+#lnavr a {
+    margin-right: 20px;
+    color: black;
+    text-decoration: none;
+    font-weight: 500;
+    font-size: 14px;
+
+}
+
+#lnavr i{
+  color: royalblue;
+}
+
+#left{
+    position: relative;
+    height: 100%;
+    width: 40%;
+    
+  
+}
+#right{
+    height: 100%;
+    width: 60%;
+    background-color: blueviolet;
+    
+}
+#rbottom{
+    width: 100%;
+    height: 50%;
+    background-image: url(https://plus.unsplash.com/premium_photo-1675667408018-3b64dbc55db1?q=80&w=1374&auto=format&fit=crop&ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D);
+    background-size: cover;
+    background-position: center;
+}
+
+#rtop{
+    width: 100%;
+    height: 50%;
+    background-size: cover;
+  background-image: url(https://images.unsplash.com/photo-1528476513691-07e6f563d97f?q=80&w=1430&auto=format&fit=crop&ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D);
+  background-position: center;
+}
+
+#rtopleft{
+    height: 100%;
+    width: 55%;
+    /* background-color: rgb(42, 165, 134); */
+    background-image: url(https://plus.unsplash.com/premium_photo-1673282159161-50a92ff3de64?q=80&w=1374&auto=format&fit=crop&ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D); 
+    background-size: cover;
+    background-position: center;
+}
+/* 
+#rtopr{
+    width: 45%;
+    height: 100%;
+ 
+
+} */
+
+
+#left #textcentre{
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%,-50%);
+
+}
+
+#textcentre h1{
+    font-size: 90px;
+    font-weight: 900;
+}
+
+#textcentre p{
+    opacity: .6;
+    font-size: 12px;
+    line-height: 15px;
+    margin-top: 20px;
+    margin-bottom: 20px;
+}
+
+#textcentre a{
+    text-decoration: none;
+    color: #000;
+    border-bottom: 1px solid black;
+    padding-bottom: 5px;
+    font-size: 13px;
+    font-weight: 600;
+}
+
+@media(max-width: 500px){
+    #main{
+        flex-direction: column;
+    }
+}
+
+#main #left{
+    width: 100%;
+}
+
+#main #right {
+    width: 100%;
+}
